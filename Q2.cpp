@@ -6,7 +6,10 @@
  *
  */
 #include <bits/stdc++.h>
+#include <chrono>
+
 using namespace std;
+using namespace std::chrono;
 
 // Epsilon value to avoid division by 0
 const double EPS = 1e-8;
@@ -111,6 +114,8 @@ double segmented_least_squares(vector<pair<double, double>> &P, int C) {
 }
 
 int main() {
+    auto start = high_resolution_clock::now();
+
     int n;
     cin >> n;
     vector<pair<double, double>> P(n);
@@ -128,6 +133,10 @@ int main() {
     }
 
     cout << segmented_least_squares(P, C) << "\n";
+
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<microseconds>(stop - start);
+    // cout << duration.count() << endl;
 
     return 0;
 }
