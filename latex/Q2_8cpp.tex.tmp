@@ -1,0 +1,130 @@
+\hypertarget{Q2_8cpp}{}\doxysection{Q2.\+cpp File Reference}
+\label{Q2_8cpp}\index{Q2.cpp@{Q2.cpp}}
+
+
+D\+AA Assigment-\/2 Question 2.  
+
+
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+Include dependency graph for Q2.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{Q2_8cpp_afef0d9c7fc55dbe71d5a94d2797d2f94}{get\+\_\+error}} (vector$<$ pair$<$ double, double $>$$>$ \&P, double a, double b, int i, int j)
+\begin{DoxyCompactList}\small\item\em Get the error for a subarray of points, given the slope and intercept of the fitted line. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{Q2_8cpp_a646e4744fa7779d177527f4ed88b7461}{get\+\_\+min\+\_\+error}} (vector$<$ pair$<$ double, double $>$$>$ \&P, vector$<$ vector$<$ double $>$$>$ \&a, vector$<$ vector$<$ double $>$$>$ \&b)
+\begin{DoxyCompactList}\small\item\em Get the minimum error for all subarrays of a list of points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Q2_8cpp_ab2d68dea3033e9e974d0cbac0e714ebd}{print\+\_\+segments}} (vector$<$ int $>$ \&prev, vector$<$ pair$<$ double, double $>$$>$ \&P, vector$<$ vector$<$ double $>$$>$ \&a, vector$<$ vector$<$ double $>$$>$ \&b)
+\begin{DoxyCompactList}\small\item\em Prints segments found by \mbox{\hyperlink{Q2_8cpp_a301d96042d08fa7c054563ded49d6662}{segmented\+\_\+least\+\_\+squares()}} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{Q2_8cpp_a301d96042d08fa7c054563ded49d6662}{segmented\+\_\+least\+\_\+squares}} (vector$<$ pair$<$ double, double $>$$>$ \&P, int C)
+\begin{DoxyCompactList}\small\item\em Executes segmented least squares line fitting algorithm give a list of points and the penalty for a new line segment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Q2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{Q2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Q2_8cpp_afe01386a82fedc016455a43c20280a97}\label{Q2_8cpp_afe01386a82fedc016455a43c20280a97}} 
+const double {\bfseries E\+PS} = 1e-\/8
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+D\+AA Assigment-\/2 Question 2. 
+
+\begin{DoxyAuthor}{Author}
+Sai Prasanna Panda(2020\+A7\+P\+S0080\+H) Harshit Verma 9.\+93(2020A7\+P\+S0041H) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Q2_8cpp_afef0d9c7fc55dbe71d5a94d2797d2f94}\label{Q2_8cpp_afef0d9c7fc55dbe71d5a94d2797d2f94}} 
+\index{Q2.cpp@{Q2.cpp}!get\_error@{get\_error}}
+\index{get\_error@{get\_error}!Q2.cpp@{Q2.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_error()}{get\_error()}}
+{\footnotesize\ttfamily double get\+\_\+error (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$$>$ \&}]{P,  }\item[{double}]{a,  }\item[{double}]{b,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Get the error for a subarray of points, given the slope and intercept of the fitted line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \+: vector of points \\
+\hline
+{\em a} & \+: slope of fitted line \\
+\hline
+{\em b} & \+: intercept of fitted line \\
+\hline
+{\em i} & \+: left index of subarray \\
+\hline
+{\em j} & \+: right index of subarray \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double \+: error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q2_8cpp_a646e4744fa7779d177527f4ed88b7461}\label{Q2_8cpp_a646e4744fa7779d177527f4ed88b7461}} 
+\index{Q2.cpp@{Q2.cpp}!get\_min\_error@{get\_min\_error}}
+\index{get\_min\_error@{get\_min\_error}!Q2.cpp@{Q2.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_min\_error()}{get\_min\_error()}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ get\+\_\+min\+\_\+error (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$$>$ \&}]{P,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{a,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Get the minimum error for all subarrays of a list of points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \+: vector of points \\
+\hline
+{\em a} & \+: 2d vector to store slopes \\
+\hline
+{\em b} & \+: 2d vector to store intercepts \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$vector$<$double$>$$>$ \+: 2d vector containing minimum errors for each subarray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q2_8cpp_ab2d68dea3033e9e974d0cbac0e714ebd}\label{Q2_8cpp_ab2d68dea3033e9e974d0cbac0e714ebd}} 
+\index{Q2.cpp@{Q2.cpp}!print\_segments@{print\_segments}}
+\index{print\_segments@{print\_segments}!Q2.cpp@{Q2.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_segments()}{print\_segments()}}
+{\footnotesize\ttfamily void print\+\_\+segments (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{prev,  }\item[{vector$<$ pair$<$ double, double $>$$>$ \&}]{P,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{a,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Prints segments found by \mbox{\hyperlink{Q2_8cpp_a301d96042d08fa7c054563ded49d6662}{segmented\+\_\+least\+\_\+squares()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev} & \+: vector containing previous index of each index in vector of points \\
+\hline
+{\em P} & \+: vector of points \\
+\hline
+{\em a} & \+: vector of slopes \\
+\hline
+{\em b} & \+: vector of intercepts \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Q2_8cpp_a301d96042d08fa7c054563ded49d6662}\label{Q2_8cpp_a301d96042d08fa7c054563ded49d6662}} 
+\index{Q2.cpp@{Q2.cpp}!segmented\_least\_squares@{segmented\_least\_squares}}
+\index{segmented\_least\_squares@{segmented\_least\_squares}!Q2.cpp@{Q2.cpp}}
+\doxysubsubsection{\texorpdfstring{segmented\_least\_squares()}{segmented\_least\_squares()}}
+{\footnotesize\ttfamily double segmented\+\_\+least\+\_\+squares (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$$>$ \&}]{P,  }\item[{int}]{C }\end{DoxyParamCaption})}
+
+
+
+Executes segmented least squares line fitting algorithm give a list of points and the penalty for a new line segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \+: vector of points \\
+\hline
+{\em C} & \+: penalty for adding a new line segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double \+: minimum possible error for the given list of points 
+\end{DoxyReturn}

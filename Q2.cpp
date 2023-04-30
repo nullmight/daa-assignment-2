@@ -1,12 +1,12 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /**
+ * @file Q2.cpp
+ * @author Sai Prasanna Panda(2020A7PS0080H)
+ * Harshit Verma 9.93(2020A7PS0041H)
  * @brief DAA Assigment-2 Question 2
- * Sai Prasanna Panda (2020A7PS0080H)
- * Harshit Verma 9.93 (2020A7PS0041H)
  *
  */
+#include <bits/stdc++.h>
+using namespace std;
 
 // Epsilon value to avoid division by 0
 const double EPS = 1e-8;
